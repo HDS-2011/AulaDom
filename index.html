@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS EXTERNO -->
+     <link rel="stylesheet" href="./css/estilo.css">
+    <title>Aula DOM</title>
+</head>
+<body>
+
+
+    <header>
+        <h1 id="titulo">Título</h1>
+    </header>
+    <main>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </p>
+        <button type="submit" onclick="mudar()">Alterar</button>
+
+        <section>
+            <h2>Classificação do Brasileirão:</h2>
+            <p>Primeiro Colocado:<span class="time"></span></p>
+            <p>Segundo Colocado:<span class="time"></span></p>
+            <p>Terceiro Colocado: <span class="time"></span></p>
+            
+            <p>
+            <label for="novo">NOvo Classificado:</label>
+            <input type="text" id="novo" name="novo">
+            </p>
+
+            <p>
+                <label for="posicao">Posição:</label>
+                <input type="number" id="posicao" 
+                name="posicao" min="1" max="3">
+            </p>
+            <button type="submit" 
+            onclick="adicionarTime()">Adicionar</button>
+        </section>
+
+        <section>
+
+            <h2>Calendario</h2>
+            <ul>
+                <li>Janeiro</li>
+                <li>Fevereiro</li>
+                <li>Março</li>
+                <li>Abril</li>
+            </ul>
+            <label for="mes">Escolha um Mês:</label>
+            <input type="number" min="1" max="4" 
+            id="mes" name="mes">
+
+            <p>
+                <button type="submit" onclick="mostrar()">
+                    Mostrar</button>
+                    <p>Mês Escolhido: <span id="resultado"></span></p>
+            </p>
+        </section>
+
+       <section>
+            <h2>Criando uma imagem</h2>
+            <button type="submit" id="btnImage">Gerar Imagem</button>
+             <div id="containerImg"></div>
+       </section>
+
+       <section>
+            <p>
+                <div id="exemplo"></div>
+            </p>
+            <p>
+                <h2>Eventos Javascript</h2>
+                <button type="submit" id="btnmsg">clique aqui</button>
+            </p>
+       </section>
+
+    </main>
+    
+
+
+    <!-- SCRIPT EXTERNO -->
+     <script src="./src/js/script.js"></script>
+</body>
+</html>
